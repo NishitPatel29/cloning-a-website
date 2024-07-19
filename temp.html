@@ -1,0 +1,87 @@
+<!-- <!DOCTYPE html>
+<html-- lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .a{
+            height: 100px;
+            width: 200px;
+            background-color: gray;
+            transition: all 3s;
+        }
+        .a:hover{
+            background-color: black;
+            height: 200px;
+            width: 400px;
+            transition: all 0s;
+        }
+    </style>
+</head>
+<body>
+    <div class="a"></div>
+</body>
+</html-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       /* div{
+            height: 40px;
+            width: 40px;
+            border:3px solid black;
+            border-radius: 100%;
+            animation-name: delay;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay: 0ms;
+            
+        }
+        @keyframes delay{
+            to{
+                transform :rotate(360deg);
+            }
+        }
+         HTML: <div class="loader"></div> */
+.loader {
+  color: #878585;
+  width: 6px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  box-shadow: 19px 0 0 7px, 38px 0 0 3px, 57px 0 0 0;
+  transform: translateX(-38px);
+  animation: l21 700ms infinite alternate linear;
+}
+
+@keyframes l21 {
+    0%{}
+  50%  {box-shadow: 19px 0 0 3px, 38px 0 0 7px, 57px 0 0 3px}
+  100% {box-shadow: 19px 0 0 0  , 38px 0 0 3px, 57px 0 0 7px}
+}
+    </style>
+</head>
+<body>
+    <div class="loader"></div>
+</body>
+</html>
